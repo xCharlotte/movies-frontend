@@ -1,3 +1,22 @@
 {
-  "extends": "next/core-web-vitals"
+  "module.exports": {
+    "extends": [
+      "next/core-web-vitals",
+      "plugin:prettier/recommended",
+      "airbnb-base",
+      "airbnb-typescript/base",
+      "next/core-web-vitals",
+      "prettier"
+    ],
+    "plugins": ["prettier"],
+    "rules": {
+      "prettier/prettier": "error",
+      "react/require-default-props": 0,
+      "import/no-extraneous-dependencies": 0,
+      "react/jsx-props-no-spreading": 0,
+      "import/extensions": 0
+    }
+  }
 }
+
+
